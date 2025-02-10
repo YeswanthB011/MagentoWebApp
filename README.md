@@ -28,9 +28,11 @@ Before running the tests, ensure you have:
 - **Git** installed  
 - **ChromeDriver** or appropriate WebDriver for the target browser  
 
-### 📝 Test Steps  
-1. Clone the repository:  
-   ```sh
-   git clone https://github.com/your-username/magento-web-testing.git
-   cd magento-web-testing
+### 📝 Writting Tests
+- 1.Place your test cases under src/test/java following the naming conventions and structure provided in existing tests.
+- 2.Utilize the Page Object Model (POM) by creating page classes under src/main/java/pages.
+- 3.Define step definitions under src/test/java/stepDefinitions.
+- 4.Feature files should be placed in src/test/resources/features.
+
+### Acknowledgment
    
