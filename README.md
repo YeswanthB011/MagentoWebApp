@@ -20,6 +20,11 @@ This project follows a **Maven** structure and implements **TestNG** for test ma
 ## 📖 Story Summary  
 
 This project is designed to test the core functionalities of the **Magento E-commerce** web application, ensuring seamless user experiences and bug-free transactions.  
+- **US_1** - New Registration and login - Create new user account in application and verify by login
+- **US_2** - TAB menu - Functionality of tab menu controls
+- **US_3** - Adding products in cart - Check the cart functioloty by adding and removing with new user account
+- **US_4** - Advanced Search - Verify the advanced search functionality(price limit search)
+- **US_5** - Product order - product purchase and payment
 
 ### ✅ Prerequisites  
 Before running the tests, ensure you have:  
