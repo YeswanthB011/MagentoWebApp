@@ -15,7 +15,7 @@ This project follows a **Maven** structure and implements **TestNG** for test ma
 - **File Management Tools:** Apache POI (for Excel interactions, optional)  
 - **Reporting Tools:** Extent Reports  
 - **Version Control:** Git and GitHub  
-- **Test Management Tools:** Similar to JIRA  
+
 
 ## 📖 Story Summary  
 
