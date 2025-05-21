@@ -1,0 +1,48 @@
+User story for magento Web Application
+
+US_1 - New Registration and login - Create new user account in application and verify by login
+US_2 - TAB menu - Functionality of tab menu controls
+US_3 - Adding products in cart - Check the cart functioloty by adding and removing with new user account
+US_4 - Advanced Search - Verify the advanced search functionality(price limit search)
+US_5 - Product order - product purchase and payment
+
+us_1 - 
+
+go to create new account page
+Submit without entering credentials and check all the sections are throwing error
+submit email id without @ symbol
+submit by giving all valid credntials 
+Login using new user credentials and verify login
+
+us_2 - 
+
+login
+Go to all categories and verify the page title
+Go to men -> jackets and verify the results if it is jackets or not
+
+us_3 - 
+login
+Search the product name
+and select all the requirements product, size and color
+go to cart and verify the selected product is displayedx
+validate the price, total price and quantity
+click proceed to checkout
+verify order summary
+
+us_4 - 
+login
+Search product name "tank" and click search button
+Validate only trunk are showing int the result
+Search product name1 "tank"
+Give the price range from 1 to 20(Do BVA)
+print number of items found
+validate the price range of product in the search result
+
+us_5-
+login select product and click proceed to checkout in cart
+fill the valid credentials
+
+
+
+wefwewf@gmail.com
+qwerty123@
