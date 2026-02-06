@@ -1,0 +1,4 @@
+TestSteps/RegistrationTestSteps.class
+Utility/baseWebDriver.class
+Utility/BaseWebDriverMethods.class
+pageElements/RegistrationPOM.class

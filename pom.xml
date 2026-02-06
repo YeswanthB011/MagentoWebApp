@@ -46,9 +46,24 @@
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
-			<groupId>com.E2E</groupId>
-			<artifactId>Java_Selenium</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

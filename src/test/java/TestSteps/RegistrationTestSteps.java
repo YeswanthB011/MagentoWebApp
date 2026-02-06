@@ -12,8 +12,13 @@ import Utility.baseWebDriver;
 import pageElements.RegistrationPOM;
 
 public class RegistrationTestSteps extends BaseWebDriverMethods {
-	WebDriver driver = baseWebDriver.getDriver();
-	RegistrationPOM pom = new RegistrationPOM();
+	private RegistrationPOM pom;
+
+	@org.testng.annotations.BeforeClass
+	public void setUp() {
+		initializeDriver();
+		pom = new RegistrationPOM();
+	}
 
 	@Test(priority = 2)
 	public void submitWithoutData() {

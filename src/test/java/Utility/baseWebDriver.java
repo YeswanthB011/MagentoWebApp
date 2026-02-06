@@ -6,6 +6,7 @@ import java.util.Locale;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -33,7 +34,12 @@ public class baseWebDriver {
                     threadDriver.set(new EdgeDriver());
                     break;
                 default:
-                    threadDriver.set(new ChromeDriver());
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    threadDriver.set(new ChromeDriver(options));
             }
 
             threadDriver.get().manage().window().setPosition(new Point(-1000, 0));

@@ -18,11 +18,20 @@ import org.testng.Assert;
 public class BaseWebDriverMethods {
 
 	// Object creation
-	private WebDriver driver = baseWebDriver.getDriver();
-	private WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-	private JavascriptExecutor js = (JavascriptExecutor) driver;
-	private Actions action = new Actions(driver);
-	private Select select;
+	protected WebDriver driver;
+	protected WebDriverWait wait;
+	protected JavascriptExecutor js;
+	protected Actions action;
+	protected Select select;
+	
+	protected void initializeDriver() {
+		if (driver == null) {
+			driver = baseWebDriver.getDriver();
+			wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+			js = (JavascriptExecutor) driver;
+			action = new Actions(driver);
+		}
+	}
 
 	// Scroll to the element using JavaScript
 	public void scrollToElement(WebElement element) {
